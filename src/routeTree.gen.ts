@@ -9,8 +9,116 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ZahraDelAlagonRouteImport } from './routes/zahra-del-alagon'
+import { Route as VideotecaRouteImport } from './routes/videoteca'
+import { Route as TransparenciaRouteImport } from './routes/transparencia'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as RecursosGeneticosRouteImport } from './routes/recursos-geneticos'
+import { Route as PatrimonioRouteImport } from './routes/patrimonio'
+import { Route as OlivarRouteImport } from './routes/olivar'
+import { Route as MemoriasRouteImport } from './routes/memorias'
+import { Route as LaReservaRouteImport } from './routes/la-reserva'
+import { Route as InvestigacionRouteImport } from './routes/investigacion'
+import { Route as GanaderiaRouteImport } from './routes/ganaderia'
+import { Route as GaleriaRouteImport } from './routes/galeria'
+import { Route as DiarioRouteImport } from './routes/diario'
+import { Route as ConservacionRouteImport } from './routes/conservacion'
+import { Route as CartaFundacionalRouteImport } from './routes/carta-fundacional'
+import { Route as BiodiversidadRouteImport } from './routes/biodiversidad'
+import { Route as ApiculturaRouteImport } from './routes/apicultura'
+import { Route as ActuacionesRouteImport } from './routes/actuaciones'
 import { Route as IndexRouteImport } from './routes/index'
 
+const ZahraDelAlagonRoute = ZahraDelAlagonRouteImport.update({
+  id: '/zahra-del-alagon',
+  path: '/zahra-del-alagon',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VideotecaRoute = VideotecaRouteImport.update({
+  id: '/videoteca',
+  path: '/videoteca',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TransparenciaRoute = TransparenciaRouteImport.update({
+  id: '/transparencia',
+  path: '/transparencia',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RecursosGeneticosRoute = RecursosGeneticosRouteImport.update({
+  id: '/recursos-geneticos',
+  path: '/recursos-geneticos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PatrimonioRoute = PatrimonioRouteImport.update({
+  id: '/patrimonio',
+  path: '/patrimonio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OlivarRoute = OlivarRouteImport.update({
+  id: '/olivar',
+  path: '/olivar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MemoriasRoute = MemoriasRouteImport.update({
+  id: '/memorias',
+  path: '/memorias',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LaReservaRoute = LaReservaRouteImport.update({
+  id: '/la-reserva',
+  path: '/la-reserva',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InvestigacionRoute = InvestigacionRouteImport.update({
+  id: '/investigacion',
+  path: '/investigacion',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GanaderiaRoute = GanaderiaRouteImport.update({
+  id: '/ganaderia',
+  path: '/ganaderia',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GaleriaRoute = GaleriaRouteImport.update({
+  id: '/galeria',
+  path: '/galeria',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DiarioRoute = DiarioRouteImport.update({
+  id: '/diario',
+  path: '/diario',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConservacionRoute = ConservacionRouteImport.update({
+  id: '/conservacion',
+  path: '/conservacion',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CartaFundacionalRoute = CartaFundacionalRouteImport.update({
+  id: '/carta-fundacional',
+  path: '/carta-fundacional',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BiodiversidadRoute = BiodiversidadRouteImport.update({
+  id: '/biodiversidad',
+  path: '/biodiversidad',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiculturaRoute = ApiculturaRouteImport.update({
+  id: '/apicultura',
+  path: '/apicultura',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ActuacionesRoute = ActuacionesRouteImport.update({
+  id: '/actuaciones',
+  path: '/actuaciones',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +127,284 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/actuaciones': typeof ActuacionesRoute
+  '/apicultura': typeof ApiculturaRoute
+  '/biodiversidad': typeof BiodiversidadRoute
+  '/carta-fundacional': typeof CartaFundacionalRoute
+  '/conservacion': typeof ConservacionRoute
+  '/diario': typeof DiarioRoute
+  '/galeria': typeof GaleriaRoute
+  '/ganaderia': typeof GanaderiaRoute
+  '/investigacion': typeof InvestigacionRoute
+  '/la-reserva': typeof LaReservaRoute
+  '/memorias': typeof MemoriasRoute
+  '/olivar': typeof OlivarRoute
+  '/patrimonio': typeof PatrimonioRoute
+  '/recursos-geneticos': typeof RecursosGeneticosRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/transparencia': typeof TransparenciaRoute
+  '/videoteca': typeof VideotecaRoute
+  '/zahra-del-alagon': typeof ZahraDelAlagonRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/actuaciones': typeof ActuacionesRoute
+  '/apicultura': typeof ApiculturaRoute
+  '/biodiversidad': typeof BiodiversidadRoute
+  '/carta-fundacional': typeof CartaFundacionalRoute
+  '/conservacion': typeof ConservacionRoute
+  '/diario': typeof DiarioRoute
+  '/galeria': typeof GaleriaRoute
+  '/ganaderia': typeof GanaderiaRoute
+  '/investigacion': typeof InvestigacionRoute
+  '/la-reserva': typeof LaReservaRoute
+  '/memorias': typeof MemoriasRoute
+  '/olivar': typeof OlivarRoute
+  '/patrimonio': typeof PatrimonioRoute
+  '/recursos-geneticos': typeof RecursosGeneticosRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/transparencia': typeof TransparenciaRoute
+  '/videoteca': typeof VideotecaRoute
+  '/zahra-del-alagon': typeof ZahraDelAlagonRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/actuaciones': typeof ActuacionesRoute
+  '/apicultura': typeof ApiculturaRoute
+  '/biodiversidad': typeof BiodiversidadRoute
+  '/carta-fundacional': typeof CartaFundacionalRoute
+  '/conservacion': typeof ConservacionRoute
+  '/diario': typeof DiarioRoute
+  '/galeria': typeof GaleriaRoute
+  '/ganaderia': typeof GanaderiaRoute
+  '/investigacion': typeof InvestigacionRoute
+  '/la-reserva': typeof LaReservaRoute
+  '/memorias': typeof MemoriasRoute
+  '/olivar': typeof OlivarRoute
+  '/patrimonio': typeof PatrimonioRoute
+  '/recursos-geneticos': typeof RecursosGeneticosRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/transparencia': typeof TransparenciaRoute
+  '/videoteca': typeof VideotecaRoute
+  '/zahra-del-alagon': typeof ZahraDelAlagonRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/actuaciones'
+    | '/apicultura'
+    | '/biodiversidad'
+    | '/carta-fundacional'
+    | '/conservacion'
+    | '/diario'
+    | '/galeria'
+    | '/ganaderia'
+    | '/investigacion'
+    | '/la-reserva'
+    | '/memorias'
+    | '/olivar'
+    | '/patrimonio'
+    | '/recursos-geneticos'
+    | '/sitemap.xml'
+    | '/transparencia'
+    | '/videoteca'
+    | '/zahra-del-alagon'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/actuaciones'
+    | '/apicultura'
+    | '/biodiversidad'
+    | '/carta-fundacional'
+    | '/conservacion'
+    | '/diario'
+    | '/galeria'
+    | '/ganaderia'
+    | '/investigacion'
+    | '/la-reserva'
+    | '/memorias'
+    | '/olivar'
+    | '/patrimonio'
+    | '/recursos-geneticos'
+    | '/sitemap.xml'
+    | '/transparencia'
+    | '/videoteca'
+    | '/zahra-del-alagon'
+  id:
+    | '__root__'
+    | '/'
+    | '/actuaciones'
+    | '/apicultura'
+    | '/biodiversidad'
+    | '/carta-fundacional'
+    | '/conservacion'
+    | '/diario'
+    | '/galeria'
+    | '/ganaderia'
+    | '/investigacion'
+    | '/la-reserva'
+    | '/memorias'
+    | '/olivar'
+    | '/patrimonio'
+    | '/recursos-geneticos'
+    | '/sitemap.xml'
+    | '/transparencia'
+    | '/videoteca'
+    | '/zahra-del-alagon'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ActuacionesRoute: typeof ActuacionesRoute
+  ApiculturaRoute: typeof ApiculturaRoute
+  BiodiversidadRoute: typeof BiodiversidadRoute
+  CartaFundacionalRoute: typeof CartaFundacionalRoute
+  ConservacionRoute: typeof ConservacionRoute
+  DiarioRoute: typeof DiarioRoute
+  GaleriaRoute: typeof GaleriaRoute
+  GanaderiaRoute: typeof GanaderiaRoute
+  InvestigacionRoute: typeof InvestigacionRoute
+  LaReservaRoute: typeof LaReservaRoute
+  MemoriasRoute: typeof MemoriasRoute
+  OlivarRoute: typeof OlivarRoute
+  PatrimonioRoute: typeof PatrimonioRoute
+  RecursosGeneticosRoute: typeof RecursosGeneticosRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  TransparenciaRoute: typeof TransparenciaRoute
+  VideotecaRoute: typeof VideotecaRoute
+  ZahraDelAlagonRoute: typeof ZahraDelAlagonRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/zahra-del-alagon': {
+      id: '/zahra-del-alagon'
+      path: '/zahra-del-alagon'
+      fullPath: '/zahra-del-alagon'
+      preLoaderRoute: typeof ZahraDelAlagonRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/videoteca': {
+      id: '/videoteca'
+      path: '/videoteca'
+      fullPath: '/videoteca'
+      preLoaderRoute: typeof VideotecaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/transparencia': {
+      id: '/transparencia'
+      path: '/transparencia'
+      fullPath: '/transparencia'
+      preLoaderRoute: typeof TransparenciaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/recursos-geneticos': {
+      id: '/recursos-geneticos'
+      path: '/recursos-geneticos'
+      fullPath: '/recursos-geneticos'
+      preLoaderRoute: typeof RecursosGeneticosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/patrimonio': {
+      id: '/patrimonio'
+      path: '/patrimonio'
+      fullPath: '/patrimonio'
+      preLoaderRoute: typeof PatrimonioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/olivar': {
+      id: '/olivar'
+      path: '/olivar'
+      fullPath: '/olivar'
+      preLoaderRoute: typeof OlivarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/memorias': {
+      id: '/memorias'
+      path: '/memorias'
+      fullPath: '/memorias'
+      preLoaderRoute: typeof MemoriasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/la-reserva': {
+      id: '/la-reserva'
+      path: '/la-reserva'
+      fullPath: '/la-reserva'
+      preLoaderRoute: typeof LaReservaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/investigacion': {
+      id: '/investigacion'
+      path: '/investigacion'
+      fullPath: '/investigacion'
+      preLoaderRoute: typeof InvestigacionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ganaderia': {
+      id: '/ganaderia'
+      path: '/ganaderia'
+      fullPath: '/ganaderia'
+      preLoaderRoute: typeof GanaderiaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/galeria': {
+      id: '/galeria'
+      path: '/galeria'
+      fullPath: '/galeria'
+      preLoaderRoute: typeof GaleriaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/diario': {
+      id: '/diario'
+      path: '/diario'
+      fullPath: '/diario'
+      preLoaderRoute: typeof DiarioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/conservacion': {
+      id: '/conservacion'
+      path: '/conservacion'
+      fullPath: '/conservacion'
+      preLoaderRoute: typeof ConservacionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/carta-fundacional': {
+      id: '/carta-fundacional'
+      path: '/carta-fundacional'
+      fullPath: '/carta-fundacional'
+      preLoaderRoute: typeof CartaFundacionalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/biodiversidad': {
+      id: '/biodiversidad'
+      path: '/biodiversidad'
+      fullPath: '/biodiversidad'
+      preLoaderRoute: typeof BiodiversidadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/apicultura': {
+      id: '/apicultura'
+      path: '/apicultura'
+      fullPath: '/apicultura'
+      preLoaderRoute: typeof ApiculturaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/actuaciones': {
+      id: '/actuaciones'
+      path: '/actuaciones'
+      fullPath: '/actuaciones'
+      preLoaderRoute: typeof ActuacionesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +417,24 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ActuacionesRoute: ActuacionesRoute,
+  ApiculturaRoute: ApiculturaRoute,
+  BiodiversidadRoute: BiodiversidadRoute,
+  CartaFundacionalRoute: CartaFundacionalRoute,
+  ConservacionRoute: ConservacionRoute,
+  DiarioRoute: DiarioRoute,
+  GaleriaRoute: GaleriaRoute,
+  GanaderiaRoute: GanaderiaRoute,
+  InvestigacionRoute: InvestigacionRoute,
+  LaReservaRoute: LaReservaRoute,
+  MemoriasRoute: MemoriasRoute,
+  OlivarRoute: OlivarRoute,
+  PatrimonioRoute: PatrimonioRoute,
+  RecursosGeneticosRoute: RecursosGeneticosRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  TransparenciaRoute: TransparenciaRoute,
+  VideotecaRoute: VideotecaRoute,
+  ZahraDelAlagonRoute: ZahraDelAlagonRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
