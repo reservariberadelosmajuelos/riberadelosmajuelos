@@ -35,6 +35,7 @@ const groups: { label: string; items: { to: string; label: string }[] }[] = [
       { to: "/galeria", label: "Galería" },
       { to: "/videoteca", label: "Videoteca" },
       { to: "/investigacion", label: "Investigación" },
+      { to: "/indicadores", label: "Indicadores y datos" },
       { to: "/memorias", label: "Memorias anuales" },
     ],
   },
