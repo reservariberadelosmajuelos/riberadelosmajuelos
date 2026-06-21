@@ -83,6 +83,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Reserva Natural Ribera de los Majuelos" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Reserva Natural Ribera de los Majuelos" },
+      { name: "twitter:title", content: "Reserva Natural Ribera de los Majuelos" },
+      { name: "description", content: "A website showcasing a private nature reserve focused on conservation, ecological restoration, and sustainable agro-production." },
+      { property: "og:description", content: "A website showcasing a private nature reserve focused on conservation, ecological restoration, and sustainable agro-production." },
+      { name: "twitter:description", content: "A website showcasing a private nature reserve focused on conservation, ecological restoration, and sustainable agro-production." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/IukoXOlD8QgVth9sWyq3hHW2dS53/social-images/social-1782027886246-g.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/IukoXOlD8QgVth9sWyq3hHW2dS53/social-images/social-1782027886246-g.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
