@@ -19,6 +19,7 @@ import { Route as OlivarRouteImport } from './routes/olivar'
 import { Route as MemoriasRouteImport } from './routes/memorias'
 import { Route as LaReservaRouteImport } from './routes/la-reserva'
 import { Route as InvestigacionRouteImport } from './routes/investigacion'
+import { Route as IndicadoresRouteImport } from './routes/indicadores'
 import { Route as GanaderiaRouteImport } from './routes/ganaderia'
 import { Route as GaleriaRouteImport } from './routes/galeria'
 import { Route as DiarioRouteImport } from './routes/diario'
@@ -79,6 +80,11 @@ const InvestigacionRoute = InvestigacionRouteImport.update({
   path: '/investigacion',
   getParentRoute: () => rootRouteImport,
 } as any)
+const IndicadoresRoute = IndicadoresRouteImport.update({
+  id: '/indicadores',
+  path: '/indicadores',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GanaderiaRoute = GanaderiaRouteImport.update({
   id: '/ganaderia',
   path: '/ganaderia',
@@ -135,6 +141,7 @@ export interface FileRoutesByFullPath {
   '/diario': typeof DiarioRoute
   '/galeria': typeof GaleriaRoute
   '/ganaderia': typeof GanaderiaRoute
+  '/indicadores': typeof IndicadoresRoute
   '/investigacion': typeof InvestigacionRoute
   '/la-reserva': typeof LaReservaRoute
   '/memorias': typeof MemoriasRoute
@@ -156,6 +163,7 @@ export interface FileRoutesByTo {
   '/diario': typeof DiarioRoute
   '/galeria': typeof GaleriaRoute
   '/ganaderia': typeof GanaderiaRoute
+  '/indicadores': typeof IndicadoresRoute
   '/investigacion': typeof InvestigacionRoute
   '/la-reserva': typeof LaReservaRoute
   '/memorias': typeof MemoriasRoute
@@ -178,6 +186,7 @@ export interface FileRoutesById {
   '/diario': typeof DiarioRoute
   '/galeria': typeof GaleriaRoute
   '/ganaderia': typeof GanaderiaRoute
+  '/indicadores': typeof IndicadoresRoute
   '/investigacion': typeof InvestigacionRoute
   '/la-reserva': typeof LaReservaRoute
   '/memorias': typeof MemoriasRoute
@@ -201,6 +210,7 @@ export interface FileRouteTypes {
     | '/diario'
     | '/galeria'
     | '/ganaderia'
+    | '/indicadores'
     | '/investigacion'
     | '/la-reserva'
     | '/memorias'
@@ -222,6 +232,7 @@ export interface FileRouteTypes {
     | '/diario'
     | '/galeria'
     | '/ganaderia'
+    | '/indicadores'
     | '/investigacion'
     | '/la-reserva'
     | '/memorias'
@@ -243,6 +254,7 @@ export interface FileRouteTypes {
     | '/diario'
     | '/galeria'
     | '/ganaderia'
+    | '/indicadores'
     | '/investigacion'
     | '/la-reserva'
     | '/memorias'
@@ -265,6 +277,7 @@ export interface RootRouteChildren {
   DiarioRoute: typeof DiarioRoute
   GaleriaRoute: typeof GaleriaRoute
   GanaderiaRoute: typeof GanaderiaRoute
+  IndicadoresRoute: typeof IndicadoresRoute
   InvestigacionRoute: typeof InvestigacionRoute
   LaReservaRoute: typeof LaReservaRoute
   MemoriasRoute: typeof MemoriasRoute
@@ -349,6 +362,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof InvestigacionRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/indicadores': {
+      id: '/indicadores'
+      path: '/indicadores'
+      fullPath: '/indicadores'
+      preLoaderRoute: typeof IndicadoresRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/ganaderia': {
       id: '/ganaderia'
       path: '/ganaderia'
@@ -425,6 +445,7 @@ const rootRouteChildren: RootRouteChildren = {
   DiarioRoute: DiarioRoute,
   GaleriaRoute: GaleriaRoute,
   GanaderiaRoute: GanaderiaRoute,
+  IndicadoresRoute: IndicadoresRoute,
   InvestigacionRoute: InvestigacionRoute,
   LaReservaRoute: LaReservaRoute,
   MemoriasRoute: MemoriasRoute,

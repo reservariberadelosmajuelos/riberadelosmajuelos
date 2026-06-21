@@ -38,10 +38,17 @@ function Page() {
           ))}
         </div>
       </Section>
-      <Section eyebrow="Resultados" title="Espacio reservado para gráficos">
-        <div className="grid h-64 place-items-center border border-dashed border-border bg-card text-sm text-muted-foreground">
-          Próximamente: visualizaciones de datos e indicadores.
-        </div>
+      <Section eyebrow="Resultados" title="Panel de indicadores">
+        <p className="mb-6 max-w-2xl text-muted-foreground">
+          Hemos abierto un panel interactivo con gráficos de especies, actuaciones,
+          charcas y fototrampeo, con filtros por año y categoría.
+        </p>
+        <a
+          href="/indicadores"
+          className="inline-flex items-center gap-2 border border-encina px-5 py-3 text-sm font-medium text-encina transition-colors hover:bg-encina hover:text-background"
+        >
+          Ver indicadores y datos →
+        </a>
       </Section>
     </>
   );
